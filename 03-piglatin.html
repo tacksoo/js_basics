@@ -1,0 +1,41 @@
+<!-- Change text into pig latin -->
+<!DOCTYPE html>
+<html>
+
+  <body>
+  
+      <input type="text" value="" id="text_input" />  
+      <input type="button" value="Make Pig Latin" id="button_piglatinify" />  
+    
+      <script>
+        var button = document.getElementById('button_piglatinify');
+
+        
+	// you can also add eventlisteners this way
+        // addEventListener for non-IE browsers
+	if (button.addEventListener) 
+	  button.addEventListener('click',processClick,false);
+	else if (button.attachEvent) // for IE
+	  button.attachEvent('onclick',processClick);
+
+	function processClick() {
+          var words = document.getElementById('text_input').value;
+          if (words) {
+	     pigLatinify(words);
+	  } else {
+             alert('Not a valid input');
+	  }
+	}
+
+        // using the map function to avoid a for loop
+	function pigLatinify(words) {
+          var origArray = words.split(' ');     
+          var pigArray = origArray.map( function (word) {
+	    return word.substring(1) + word.charAt(0) + "ay";
+	  });
+          alert(pigArray.join(' '));
+	}
+      </script>
+
+  </body>
+</html>
