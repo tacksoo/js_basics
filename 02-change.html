@@ -1,0 +1,37 @@
+<!-- Makes change for currency in USD -->
+<!DOCTYPE html>
+<html>
+
+  <body>
+  
+      <input type="text" value="" id="text_cents" />  
+      <input type="button" value="Make Change" id="button_compute" />  
+    
+      <script>
+        var button = document.getElementById('button_compute');
+	button.onclick = processClick;
+
+	function processClick() {
+           var cents = document.getElementById('text_cents').value;
+           if (cents) {
+	      makeChange(cents);
+	   } else {
+              alert('Not a valid input');
+	   }
+	}
+
+	function makeChange(num) {
+           var quarters = Math.floor(num/25);
+           num = num%25;
+	   var dimes = Math.floor(num/10);
+           num = num%10;
+           var nickels = Math.floor(num/5);
+	   num = num%5;
+	   var pennies = num;
+	   alert('You get:\n' + quarters + ' quarters\n' + dimes + ' dimes\n' +
+	         + nickels + ' nickels\n' + pennies + ' pennies\n');
+	}
+      </script>
+
+  </body>
+</html>
