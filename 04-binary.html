@@ -1,0 +1,60 @@
+<!-- recursively generate n-binary digits  -->
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <style>
+      #content 
+      {
+        padding: 20px;
+	border: 2px solid black;
+	background-color: green
+      }
+    </style>
+
+  </head>
+
+  <body>
+  
+    <div id="content">
+      Enter number of binary digits to generate
+    </div> 
+    
+    <input type="text" id="text_digits" />
+    <input type="button" value="Generate" id="button" />  
+    
+    <script>
+      var button = document.getElementById('button');
+      button.onclick = processClick;
+      var content = document.getElementById('content');
+      var permutations = ''; 
+
+      function processClick() {
+        var digits = document.getElementById('text_digits').value;
+        var content = document.getElementById('content');
+        content.innerHTML = '';	
+	permutations = '';
+
+        if (digits) {
+          generateBinary(parseInt(digits),'');
+	} else {
+          alert('Not a valid input');
+	}
+
+	content.innerHTML = permutations;
+      }
+
+      function generateBinary(num,str) {
+        if (str.length === num) {
+	   permutations += (str + '</br>');
+	} else {
+           generateBinary(num,str+'0');
+           generateBinary(num,str+'1');
+        }
+      }
+
+    </script>
+
+  </body>
+
+</html>
