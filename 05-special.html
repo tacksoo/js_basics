@@ -1,0 +1,82 @@
+<!-- special.html: shows various form controls -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> SPECIAL for Programmers </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+
+    <style>
+      .question {
+        border-style: solid;
+        border-width: 5px;
+        padding: 5px;
+        width: 70%;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+
+    <h2>SPECIAL for Programmers</h2>
+
+    <form action="http://168.28.21.110/special.php" method="GET">
+
+      <div class="question">
+        <p> Do you comment your code? </p>
+        <input type="radio" name="comments" value="yes_comment" />
+        I comment code when code is not enough <br />
+        <input type="radio" name="comments" value="some_comment" />
+        I comment when code somebody asks me too <br />
+        <input type="radio" name="comments" value="no_comment" />
+        What is a comment? <br />
+      </div>
+
+
+      <div class="question">
+        <p> Do you following the DRY principle? </p>
+        <input type="radio" name="dry" value="yes_dry" />
+        Yes, religiously <br />
+        <input type="radio" name="dry" value="some_dry" />
+        Yes, but sometimes I find WET better <br />
+        <input type="radio" name="dry" value="no_dry" />
+        What the heck do you mean DRY? <br />
+      </div>
+
+      <div class="question">
+        What is your favorite programming language?
+        <select name="fav_lang">
+          <option>Java</option>
+          <option>JavaScript</option>
+          <option>PHP</option>
+          <option>C/C++</option>
+          <option>Ruby</option>
+          <option>Python</option>
+          <option>Etc</option>
+        </select>
+      </div>
+
+      
+      <div class="question">
+        What are your thoughts on Test Driven Development? <br />
+        <textarea rows="10" cols="60" name="tdd"></textarea>
+      </div>
+
+      <div class="question">
+        What are your favorite Unix tools? <br />
+        <input type="checkbox" name="grep" /> grep
+        <input type="checkbox" name="sed" /> sed
+        <input type="checkbox" name="find" /> find
+        <input type="checkbox" name="cut" /> cut
+      </div>
+
+      <input type="submit" value="Let's See" />
+
+      </div>
+    </form>
+	
+  </body>
+
+</html>
