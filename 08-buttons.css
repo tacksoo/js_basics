@@ -1,0 +1,28 @@
+.jumbotron {
+  /* image is from http://imgur.com/r/highres */
+  background-image:url('http://i.imgur.com/W0uiUAR.jpg');
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #000;
+  font-size: 55px;  
+  font-family: 'Racing Sans One', cursive;
+}
+
+.jumbotron p {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.width-120px { 
+   width: 120px;
+}
