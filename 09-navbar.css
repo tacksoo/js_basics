@@ -1,0 +1,43 @@
+.nav {
+  padding-top: 10px;
+}
+
+.nav a {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  padding: 20px 50px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  /* image is from http://imgur.com/r/highres */
+  background-image:url('http://i.imgur.com/mkbS36L.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #000;
+  font-size: 55px;  
+}
+
+.jumbotron p {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.width-120px { 
+   width: 120px;
+}
