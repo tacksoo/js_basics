@@ -1,0 +1,32 @@
+.jumbotron {
+  /* image is from http://imgur.com/r/highres */
+  background-image:url('http://i.imgur.com/U7ZkM.jpg');
+  height: 850px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 55px;  
+}
+
+.jumbotron p {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#entrance {
+  width: 600px;
+  height: 70px;
+  font-size: 3em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
