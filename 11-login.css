@@ -1,0 +1,28 @@
+.jumbotron {
+  /* image is from http://imgur.com/r/highres */
+  background-image:url('http://i.imgur.com/trjRs1j.jpg');
+  height: 850px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 55px;  
+}
+
+.jumbotron p {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.form-signin {
+  max-width: 350px;  
+  margin: 0 auto;
+}
