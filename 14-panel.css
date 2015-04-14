@@ -1,0 +1,14 @@
+
+.panel {
+  margin: 10px;
+}
+
+.menu-panel {
+  min-height: 200px;
+  max-height: 300px;
+}
+
+.main-panel {
+  min-height: 500px;
+  max-height: 800px;
+}
